@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urvashi's Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!--<a href="/"></a>-->
+        <nav>
+            <a target="_blank" href="https://github.com/gosurvashi29"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/urvashi-goswami-88a074109/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <div class="intro-text">
+                    <div class="intro-image">
+                        <img src="images/Selfie.jpg" class="round-image">
+                    </div>
+                    <h1>Hi! I'm Urvashi...</h1>
+             
+                    <p>Software Developer</p>
+                </div>
+               
+            
+            <h5 class="intro-description">
+                I'm a computer science postgrad and passionate web developer loves building fun and useful web apps. I enjoy exploring new tech, reading, dancing, and singing. Always excited to learn, share, and connect — feel free to reach out and chat about web development! 🚀🌍
+               
+            </h5>
+        </div>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="https://drive.google.com/file/d/17WqsjpgaiW7O92K3PCsb7BNLhsquoRew/view?usp=sharing">
+                    Resume
+                </a>
+                <a target="_blank" href="https://github.com/gosurvashi29">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/urvashi-goswami-88a074109/">LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's changed!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Languages</td>
+                        <td> JavaScript | TypeScript | HTML | CSS | SQL | Basic Python | C </td>
+                    </tr>
+                    <tr>
+                        <td>Web Dev</td>
+                        <td>Node.js | Express.js | MySQL | MongoDB | Socket.IO</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps</td>
+                        <td>CI/CD | GIT | AWS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Data Analytics</td>
+                        <td>EDA | Visualization | Matlab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        
+                        <h4>Expenny | Smart Expense Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NodeJS & ExpressJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MongoDB</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JWT</p>
+                            </div>
+                        </div>
+                        <p>Track and manage all your expenses effortlessly!
+                        </p>
+                        <div class="project-links">
+                            <!--<a target="_blank" href="">Live</a>-->
+                            <a target="_blank" href="https://github.com/gosurvashi29/Expense-Tracker-With-MongoDb">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/expense.png"
+                            alt="" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        
+                        <h4>GroupEcho | Group Chat Application</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NodeJS & ExpressJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>WebSocket</p>
+                            </div>
+                        </div>
+                        <p>Chat in real-time, share media, and manage your groups with ease!
+                        </p>
+                        <div class="project-links">
+                            <!--<a target="_blank" href="">Live</a>-->
+                            <a target="_blank" href="https://github.com/gosurvashi29/Group-Chat-App-with-websocket">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/groupchat.png"
+                            alt="" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        
+                        <h4>JobFlow | Job Application Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NodeJS & ExpressJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Cron</p>
+                            </div>
+                        </div>
+                        <p>Track your job applications, set reminders, and stay organized throughout your job hunt!
+                        </p>
+                        <div class="project-links">
+                            <!--<a target="_blank" href="">Live</a>-->
+                            <a target="_blank" href="https://github.com/gosurvashi29/Job-Tracker-Application">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/jobtrack1.png"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>April 26, 2023</p>
+                        <h4>BCI & Neurotechnology Spring School</h4>
+                        <p>g.tec Medical Engineering, Vienna, Austria
+                            (Apr 17–26, 2023), earning 14 credits.
+                            Joined by 15,787 participants from 113 countries.
+                        </p>
+                        
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/picbci.jpeg"
+                            alt="" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        
+                        <p>May 18, 2022</p>
+                        <h4>Python Programming
+                        </h4>
+                        <p>Programming for Everybody (Getting Started with Python) 
+                            — Coursera (University of Michigan) 
+                            
+                        </p>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/base.png"
+                            alt="" />
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>May 10, 2020</p>
+                        <h4>Foundational Artificial Intelligence
+                        </h4>
+                        <p>An industry-recognized course aligned with the SSC NASSCOM AI curriculum, validated and recommended by SkillUp.
+
+
+                        </p>
+                        
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/picai.jpg"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p>March 2013, 2014, 2015 </p>
+                    <h4>Robotics Participation
+                    </h4>
+                    <p>Participated in the International
+                        Robotics Event ROBOCON and
+                        IGNUS'14 at IIT Jodhpur.
+                    </p>
+                    
+                </div>
+                <div class="img-div">
+                    <img class="big-img"
+                        src="images/pic.jpg"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        </section>
+    
+            <h2>Publications</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 29, 2023</p>
+                    
+                    <p>Enhancing Elderly Well-being:
+                        An Embedded Robust Fitness
+                        Tracker for Holistic Mental and
+                        Physical Health Monitoring.
+                        
+                    </p>
+                    
+                        <div class="project-links">
+                            <a target="_blank" href="https://ijetcr.org/index.php/ijetcr/article/view/549">Link</a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/pich.jpeg"
+                            alt="" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>June,2021</p>
+                    
+                    <p>Road Sign Detection and
+                        Recognition using Machine
+                        Learning.
+                        
+                    </p>
+                    
+                        <div class="project-links">
+                            <a target="_blank" href="https://advancedengineeringscience.com/article/2021/1027.html">Link</a>
+                            
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="images/traffic_sign_classification_phases.jpg"
+                            alt="" />
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By Urvashi</a> ⭐️ the repo on <a target="_blank"
+                href="">GitHub</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for our little color switching game
+
+        // 1. select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the functions 
+
+        function playGame() {
+            // this function enables the play of the game by showing the color selector input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
+</body>
+
+</html>
